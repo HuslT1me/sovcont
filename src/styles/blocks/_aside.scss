@@ -1,0 +1,72 @@
+@use '../helpers' as *;
+
+.aside {
+  @include tablet {
+    padding-inline: rem(20);
+  }
+
+  &__list {
+    flex-direction: column;
+    min-height: 0;
+
+    @include tablet-above {
+      display: flex;
+      row-gap: rem(12);
+    }
+
+    &-item {
+      position: relative;
+      padding-left: rem(46);
+      font-size: rem(18);
+
+      &::before {
+        display: block;
+        position: absolute;
+        top: rem(13);
+        left: 0;
+        background-color: var(--color-accent);
+        width: rem(29);
+        height: rem(1);
+        content: '';
+
+        @include mobile {
+          top: rem(14);
+        }
+      }
+    }
+
+    &-button {
+      text-align: left;
+
+      @include mobile {
+        line-height: 1.78;
+      }
+
+      @include reset-button;
+
+      &.is-active {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__swiper {
+    @include tablet {
+      display: flex;
+      height: rem(216);
+    }
+  }
+
+  &__slider-navigation {
+    display: flex;
+    align-items: end;
+
+    @include tablet-above {
+      display: none;
+    }
+  }
+
+  &__slider-button-next {
+    padding-bottom: rem(9);
+  }
+}

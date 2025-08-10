@@ -1,0 +1,130 @@
+@use '../helpers' as *;
+
+.cases {
+  margin-top: rem(7);
+  margin-bottom: fluid(50, 20);
+
+  &__inner {
+    display: flex;
+    row-gap: rem(20);
+    flex-direction: column;
+  }
+
+  &__main {
+    display: flex;
+    gap: fluid(46, 20);
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    &-cover {
+      margin-top: rem(10);
+      border-radius: var(--rounded-base);
+      object-fit: cover;
+      object-position: center;
+
+      @include mobile {
+        aspect-ratio: 350 / 252;
+      }
+    }
+
+    &-title {
+      display: block;
+      margin-block: rem(15) fluid(36, 25);
+      font-size: fluid(40, 22);
+      line-height: 1.1;
+      letter-spacing: var(--tracking-long);
+
+      @include mobile {
+        max-width: rem(333);
+        line-height: 1.27;
+        letter-spacing: var(--tracking-medium);
+      }
+
+      span {
+        @include line-clamp(7);
+      }
+    }
+
+    &-details {
+      display: flex;
+      row-gap: rem(11);
+      flex-direction: column;
+
+      dl {
+        margin: 0;
+
+        div {
+          display: flex;
+          column-gap: rem(5);
+        }
+
+        dt {
+          font-weight: 700;
+        }
+
+        dd {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__article {
+    display: flex;
+    border-radius: var(--rounded-base);
+    background-color: var(--article-bg);
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &-cover {
+      border-radius: var(--rounded-base) 0 0 var(--rounded-base);
+      object-fit: cover;
+      object-position: center;
+
+      @include mobile {
+        border-radius: var(--rounded-base);
+        aspect-ratio: 350 / 199;
+        width: 100%;
+      }
+    }
+
+    &-details {
+      display: flex;
+      row-gap: rem(9);
+      flex-direction: column;
+      padding: rem(23) rem(35);
+    }
+
+    &-title {
+      font-weight: 700;
+
+      span {
+        @include line-clamp(5);
+      }
+    }
+  }
+
+  &__read-more {
+    display: flex;
+    align-items: center;
+
+    &-link {
+      align-items: center;
+      height: rem(44);
+    }
+  }
+}

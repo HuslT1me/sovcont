@@ -1,0 +1,55 @@
+@use '../helpers' as *;
+
+.service-card {
+  @include decor-line();
+
+  backdrop-filter: var(--backdrop);
+  border: var(--border);
+  border-radius: var(--rounded-base);
+  background: color-mix(in srgb, var(--color-white) 80%, transparent);
+  padding: rem(25) rem(22) rem(13) rem(32);
+
+  &:has(.service-card__link:hover) {
+    .service-card__title {
+      color: var(--color-accent);
+      transition-duration: var(--transition-duration)
+    }
+  }
+
+  &__link {
+    @include abs-full;
+  }
+
+  &__inner {
+    display: flex;
+    row-gap: rem(17);
+    flex-direction: column;
+    margin-bottom: rem(5);
+    padding-left: rem(12);
+  }
+
+  &__title {
+    @include line-clamp(2);
+
+    height: rem(64);
+    font-weight: 700;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  &__description {
+    min-height: rem(96);
+    font-size: rem(15);
+    line-height: 1.6;
+
+    p {
+      @include line-clamp;
+    }
+  }
+
+  &__image {
+    aspect-ratio: 176 / 176;
+  }
+}

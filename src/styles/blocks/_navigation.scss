@@ -1,0 +1,10 @@
+@use '../helpers' as *;
+
+.navigation {
+  &__list {
+    display: flex;
+    column-gap: rem(27);
+    font-size: rem(16);
+    justify-content: center;
+  }
+}

@@ -1,0 +1,82 @@
+@use '../helpers' as *;
+
+.address-list {
+  --borderCustom: #{rem(1)} solid var(--color-gray-50);
+
+  display: flex;
+  column-gap: fluid-to-laptop(64, 30);
+
+  @include tablet {
+    justify-content: space-between;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__item {
+    border-left: rem(1) solid var(--color-gray-50);
+    padding-left: rem(25);
+
+    @include tablet {
+      &:first-child {
+        border-left: none;
+      }
+    }
+
+    @include mobile {
+      border-top: var(--borderCustom);
+      border-left: none;
+      padding-left: 0;
+      padding-block: rem(25);
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__office {
+    display: grid;
+    height: 100%;
+
+    &-city {
+      padding-block: rem(5) rem(10);
+      font-size: rem(16);
+    }
+
+    &-address {
+      display: flex;
+      row-gap: rem(19);
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: rem(14);
+    }
+
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-location {
+      line-height: 1.43;
+
+      @include mobile {
+        letter-spacing: var(--tracking-small);
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    &-mail {
+      color: var(--color-accent);
+
+      @include hover {
+        opacity: 0.7;
+        color: var(--color-accent);
+      }
+    }
+  }
+}

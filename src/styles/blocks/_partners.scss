@@ -1,0 +1,70 @@
+@use '../helpers' as *;
+
+.partners {
+  margin-top: fluid(16, 0);
+  margin-bottom: fluid(50, 20);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 16.8% 1fr;
+    gap: fluid(57, 46);
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__aside {
+    margin-top: fluid(20, 5);
+  }
+
+  &__details {
+    display: none;
+    row-gap: rem(40);
+    flex-direction: column;
+
+    &.is-active {
+      display: flex;
+    }
+
+    &-item {
+      display: flex;
+      row-gap: fluid(41, 33);
+      flex-direction: column;
+    }
+
+    &-logo {
+      @include tablet {
+        margin-inline: rem(20);
+      }
+    }
+
+    &-image {
+      border-radius: var(--rounded-base);
+      object-fit: cover;
+      object-position: center;
+
+      @include tablet {
+        border-radius: 0;
+        aspect-ratio: 390 / 250;
+        width: 100%;
+      }
+    }
+
+    &-about {
+      @include w-full(rem(754));
+
+      @include tablet {
+        margin-inline: auto;
+        width: calc(100% - rem(40));
+        line-height: 1.56;
+      }
+    }
+
+    &-description {
+      @include tablet {
+        padding-inline: rem(20);
+      }
+    }
+  }
+}

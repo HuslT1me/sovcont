@@ -1,0 +1,126 @@
+@use '../helpers' as *;
+
+.header {
+  animation-fill-mode: both;
+  animation-name: scrolling-header;
+  background-color: var(--color-white);
+  animation-timeline: scroll();
+  animation-range: 0 rem(100);
+
+  @mixin scrolling-header-styles {
+    box-shadow: 0 rem(2) rem(8) rgba(0, 0, 0, 0.05);
+  }
+
+  @keyframes scrolling-header {
+    to {
+      @include scrolling-header-styles;
+    }
+  }
+
+  @supports (not (animation-timeline: scroll())) {
+    @include scrolling-header-styles;
+    position: fixed !important;
+  }
+
+  @include laptop {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    padding-block: rem(11);
+  }
+
+  @include mobile {
+    padding-right: rem(11);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: auto 1fr 22.8%;
+    justify-content: space-between;
+    align-items: center;
+    border: var(--border);
+    border-radius: var(--rounded-base);
+    padding: rem(17);
+
+    @include laptop {
+      grid-template-columns: auto auto;
+      border: none;
+      padding: 0;
+    }
+  }
+
+  &__logo {
+    display: flex;
+
+    &-image {
+      @include mobile {
+        width: rem(128);
+        height: rem(32);
+      }
+    }
+  }
+
+  &__mobile-menu {
+    display: flex;
+    column-gap: fluid(20, 13);
+    align-items: center;
+
+    @include laptop-above {
+      display: contents;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    column-gap: rem(20);
+    justify-content: space-between;
+    align-items: center;
+
+    @include laptop {
+      column-gap: rem(25);
+    }
+
+    @include tablet {
+      align-items: start;
+    }
+  }
+
+  &__languages {
+    display: flex;
+    column-gap: rem(17);
+    font-size: rem(14);
+  }
+
+  &__language-link {
+    // padding-bottom: rem(5);
+    opacity: 0.5;
+    text-align: center;
+
+    &--active {
+      opacity: 1;
+      border-bottom: var(--border);
+      color: var(--color-accent);
+    }
+  }
+
+  &__calculate-delivery {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: rem(1) solid transparent;
+    border-radius: var(--rounded-sm);
+    background-color: var(--color-accent);
+    padding-inline: rem(15);
+    height: rem(37);
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: rem(16);
+
+    @include hover {
+      border-color: var(--color-accent);
+      background-color: var(--color-light);
+      color: var(--color-accent);
+    }
+  }
+}

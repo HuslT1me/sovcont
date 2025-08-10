@@ -1,0 +1,74 @@
+@use '../helpers' as *;
+
+.cases-item {
+  display: flex;
+  row-gap: fluid(7, 0);
+  flex-direction: column;
+  margin-bottom: fluid(58, 40);
+
+  &__meta {
+    display: flex;
+    column-gap: rem(17);
+    align-items: center;
+  }
+
+  &__inner {
+    display: flex;
+    gap: fluid-to-laptop(54, 20);
+
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__title {
+    margin-bottom: fluid(71, 25);
+    font-size: fluid(40, 22);
+    line-height: 1.1;
+    letter-spacing: var(--tracking-long);
+
+    @include mobile {
+      max-width: rem(333);
+      line-height: 1.27;
+      letter-spacing: var(--tracking-medium);
+    }
+  }
+
+  &__description-list {
+    margin-bottom: rem(53);
+
+    @include mobile {
+      margin-bottom: rem(57);
+    }
+
+    &-item {
+      display: flex;
+      column-gap: rem(5);
+    }
+  }
+
+  &__key {
+    font-weight: 700;
+    letter-spacing: var(--tracking-long);
+  }
+
+  &__link-back {
+    display: flex;
+    align-items: center;
+    rotate: 180deg;
+    height: rem(44);
+  }
+
+  &__cover {
+    flex: none;
+    margin-top: rem(7);
+
+    &-image {
+      border-radius: var(--rounded-base);
+
+      @include mobile {
+        aspect-ratio: 350 / 252;
+      }
+    }
+  }
+}

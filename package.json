@@ -1,0 +1,22 @@
+{
+  "name": "sovcont",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.89.2",
+    "sass-embedded": "^1.89.0",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "prettier-plugin-css-order": "^2.1.2",
+    "swiper": "^11.2.8"
+  }
+}

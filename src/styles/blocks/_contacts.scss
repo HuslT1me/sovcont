@@ -1,0 +1,57 @@
+@use '../helpers' as *;
+
+.contacts {
+  margin-bottom: fluid(50, 20);
+
+  &__address-list {
+    column-gap: rem(20);
+    justify-content: space-between;
+    margin-bottom: fluid(42, 20);
+
+    @include tablet {
+      padding-inline: rem(20);
+    }
+  }
+
+  .address-list {
+    &__office-city {
+      padding-top: rem(9);
+      padding-bottom: fluid(25, 10);
+      font-size: fluid(20, 16);
+      letter-spacing: var(--tracking-medium);
+    }
+
+    &__office-address {
+      row-gap: fluid(30, 19);
+      font-size: fluid(16, 14);
+
+      @include mobile {
+        line-height: 1.43;
+      }
+    }
+
+    &__item {
+      @include mobile {
+        padding-top: rem(20);
+      }
+
+      &:first-child {
+        @include mobile {
+          border-top: none;
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  &__map-image {
+    @include tablet-above {
+      border-radius: var(--rounded-base);
+    }
+
+    @include mobile {
+      aspect-ratio: 390 / 240;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use './layout/header';
+@use './layout/footer';
+
+@use './blocks/cases-item';
+@use './blocks/aside';
+@use './blocks/description-details';
+@use './blocks/navigation';
+@use './blocks/burger-menu';
+@use './blocks/address-list';
+@use './blocks/service-card';
+@use './blocks/swiper';
+@use './blocks/hero';
+@use './blocks/about';
+@use './blocks/services';
+@use './blocks/showcase';
+@use './blocks/news';
+@use './blocks/news-item';
+@use './blocks/contacts';
+@use './blocks/partners';
+@use './blocks/cases';

@@ -1,0 +1,85 @@
+@use '../helpers' as *;
+
+.footer {
+  --paddingCopyrightLeft: #{rem(15)};
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 28.4% 1fr;
+    border: rem(1) solid var(--color-gray-50);
+    border-radius: var(--rounded-base);
+    padding: rem(17) rem(18) rem(23);
+
+    @include tablet {
+      row-gap: rem(20);
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__meta {
+    display: flex;
+    column-gap: rem(20);
+    align-items: start;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: rem(6);
+      height: 100%;
+
+      @include tablet {
+        row-gap: rem(24);
+      }
+    }
+  }
+
+  &__logo {
+    flex: none;
+  }
+
+  &__copyright {
+    opacity: 0.7;
+    font-size: rem(14);
+    line-height: 1.43;
+    text-transform: uppercase;
+
+    p {
+      margin: 0;
+
+      &:not(:first-child) {
+        padding-left: var(--paddingCopyrightLeft);
+        text-transform: none;
+      }
+    }
+  }
+
+  &__soc1als {
+    display: flex;
+    column-gap: rem(18);
+    padding-left: var(--paddingCopyrightLeft);
+
+    &-link {
+      .icon {
+        transition-duration: var(--transition-duration);
+        color: var(--color-gray-55);
+      }
+
+      @include hover {
+        .icon {
+          &--whatsapp {
+            color: var(--color-whatsapp);
+          }
+
+          &--vk {
+            color: var(--color-vk);
+          }
+
+          &--telegram {
+            color: var(--color-telegram);
+          }
+        }
+      }
+    }
+  }
+}

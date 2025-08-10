@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sovcont | Статья кейса</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a class="header__logo-link" href="./main.html">
+            <img
+              class="header__logo-image"
+              src="/logo.svg"
+              width="176"
+              height="44"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <nav class="header__navigation navigation hidden-laptop">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./about.html">о компании</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./services.html">услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./partners.html">партнеры</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./news.html">новости индустрии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./cases.html">кейсы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./contacts.html">контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__mobile-menu">
+          <div class="header__burger burger-menu" data-js-overlay-menu>
+            <button class="burger-menu__button" data-js-overlay-menu-burger-button>
+              <div class="burger-menu__button-inner">
+                <span
+                  class="burger-menu__button-line burger-menu__button-line--first"
+                >
+                </span>
+                <span
+                  class="burger-menu__button-line burger-menu__button-line--second"
+                >
+                </span>
+                <span
+                  class="burger-menu__button-line burger-menu__button-line--third"
+                >
+                </span>
+              </div>
+            </button>
+            <dialog class="burger-menu__content" data-js-overlay-menu-dialog>
+              <ul class="burger-menu__list">
+                <li class="burger-menu__dropdown">
+                  <details class="burger-menu__details">
+                    <summary class="burger-menu__summary">О компании</summary>
+                  </details>
+                  <div class="burger-menu__dropdown-content">
+                    <div class="burger-menu__dropdown-inner">
+                      <ul class="burger-menu__dropdown-list">
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Морские перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Экспедирование в порту
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Автомобильные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Железнодорожные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Таможенное оформление
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Складская логистика
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Консалтинг
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="burger-menu__dropdown">
+                  <details class="burger-menu__details">
+                    <summary class="burger-menu__summary">Услуги</summary>
+                  </details>
+                  <div class="burger-menu__dropdown-content">
+                    <div class="burger-menu__dropdown-inner">
+                      <ul class="burger-menu__dropdown-list">
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Морские перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Экспедирование в порту
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Автомобильные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Железнодорожные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Таможенное оформление
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Складская логистика
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Консалтинг
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="burger-menu__dropdown">
+                  <details class="burger-menu__details">
+                    <summary class="burger-menu__summary">Партнеры</summary>
+                  </details>
+                  <div class="burger-menu__dropdown-content">
+                    <div class="burger-menu__dropdown-inner">
+                      <ul class="burger-menu__dropdown-list">
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Морские перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Экспедирование в порту
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Автомобильные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Железнодорожные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Таможенное оформление
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Складская логистика
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Консалтинг
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="burger-menu__dropdown">
+                  <details class="burger-menu__details">
+                    <summary class="burger-menu__summary">Новости индустрии</summary>
+                  </details>
+                  <div class="burger-menu__dropdown-content">
+                    <div class="burger-menu__dropdown-inner">
+                      <ul class="burger-menu__dropdown-list">
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Морские перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Экспедирование в порту
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Автомобильные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Железнодорожные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Таможенное оформление
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Складская логистика
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Консалтинг
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="burger-menu__dropdown">
+                  <details class="burger-menu__details">
+                    <summary class="burger-menu__summary">Кейсы</summary>
+                  </details>
+                  <div class="burger-menu__dropdown-content">
+                    <div class="burger-menu__dropdown-inner">
+                      <ul class="burger-menu__dropdown-list">
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Морские перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Экспедирование в порту
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Автомобильные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Железнодорожные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Таможенное оформление
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Складская логистика
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Консалтинг
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="burger-menu__dropdown">
+                  <details class="burger-menu__details">
+                    <summary class="burger-menu__summary">Контакты</summary>
+                  </details>
+                  <div class="burger-menu__dropdown-content">
+                    <div class="burger-menu__dropdown-inner">
+                      <ul class="burger-menu__dropdown-list">
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Морские перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Экспедирование в порту
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Автомобильные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Железнодорожные перевозки
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Таможенное оформление
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Складская логистика
+                          </a>
+                        </li>
+                        <li class="burger-menu__dropdown-item">
+                          <a class="burger-menu__dropdown-link" href="#">
+                            Консалтинг
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </dialog>
+          </div>
+          <div class="header__controls">
+            <div class="header__languages">
+              <a
+                class="header__language-link header__language-link--active"
+                href="#"
+              >
+                ру
+              </a>
+              <a class="header__language-link" href="#">en</a>
+            </div>
+            <a class="header__soc1al-link visible-laptop" href="#">
+              <svg class="icon icon--whatsapp-mobile" width="26" height="26">
+                <use href="/assets/icons/sprite.svg#whatsapp_mobile"></use>
+              </svg>
+            </a>
+            <button
+              class="header__calculate-delivery hidden-tablet"
+              role="button"
+              data-js-dialog-trigger
+            >
+              расчет доставки
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="cases-item container" aria-labelledby="cases-item">
+        <div class="cases-item__meta">
+          <a class="cases-item__link-back" href="#">
+            <svg class="icon icon--arrow-left" width="48" height="8">
+              <use href="/assets/icons/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+          <time class="cases-item__date date" datetime="2025-05-19">
+            <span>19.05.2025</span>
+          </time>
+        </div>
+        <div class="cases-item__inner">
+          <div class="cases-item__details">
+            <h1 class="cases-item__title h2">
+              <span>
+                Морская доставка под угрозой: как мы спасли сезонную коллекцию
+                одежды
+              </span>
+            </h1>
+            <dl class="cases-item__description-list">
+              <div class="cases-item__description-list-item">
+                <dt class="cases-item__key">Сфера:</dt>
+                <dd class="cases-item__value">
+                  международные морские перевозки
+                </dd>
+              </div>
+              <div class="cases-item__description-list-item">
+                <dt class="cases-item__key">Клиент:</dt>
+                <dd class="cases-item__value">импортер одежды и аксессуаров</dd>
+              </div>
+              <div class="cases-item__description-list-item">
+                <dt class="cases-item__key">Регион:</dt>
+                <dd class="cases-item__value">
+                  Россия, поставка из Китая через Европу
+                </dd>
+              </div>
+            </dl>
+            <div class="description-details">
+              <div class="description-details__item">
+                <h5>Задача</h5>
+                <p>
+                  В разгар подготовки к осенне-зимнему сезону российская
+                  компания, занимающаяся импортом готовой одежды и аксессуаров,
+                  столкнулась с риском срыва поставки. Партию продукции
+                  отгрузили в начале августа. Планировалось, что она прибудет в
+                  порт Новороссийск к 10 сентября, а затем быстро распределится
+                  по складам и попадёт на полки магазинов к старту федеральной
+                  рекламной кампании.
+                </p>
+              </div>
+              <div class="description-details__item">
+                <h6>Проблема</h6>
+                <p>
+                  На одном из этапов морская линия изменила маршрут. Вместо
+                  судна, которое доставило бы товар в порт траншипмента за 20
+                  дней, груз был отправлен на судне с задержкой минимум на 10
+                  дополнительных дней. Это означало, что в Новороссийск товар
+                  прибудет только к концу сентября — а значит, не останется
+                  времени на распределение по регионам и размещение в магазинах.
+                  У клиента — сезонный товар и рекламная кампания на федеральных
+                  каналах. Потенциальные потери — серьёзные.
+                </p>
+              </div>
+              <div class="description-details__item">
+                <h6>Решение</h6>
+                <p>
+                  Мы оперативно включились в переговоры с морской линией.
+                  Учитывая срочность ситуации и риски для клиента, удалось
+                  добиться нестандартного решения:
+                </p>
+                <ul>
+                  <li>
+                    Прямо во время движения судна согласовали перевалку груза в
+                    малайзийском порту.
+                  </li>
+                  <li>
+                    Далее груз был погружен на другое судно — то самое, которое
+                    изначально должно было везти товар по более короткому
+                    маршруту.
+                  </li>
+                  <li>
+                    Несмотря на небольшое смещение графика, контейнеры прибыли в
+                    Новороссийск к 15 сентября, что позволило клиенту провести
+                    доставку первой волны товара и начать продажи в рамках
+                    рекламной кампании.
+                  </li>
+                </ul>
+              </div>
+              <div class="description-details__item">
+                <h6>Результат</h6>
+                <ul>
+                  <li>
+                    Клиент получил товар почти в срок — всего с 5-дневной
+                    задержкой, которая не повлияла критично на бизнес-процессы.
+                  </li>
+                  <li>Все репутационные риски были устранены.</li>
+                  <li>
+                    Дополнительные затраты, связанные с ускоренной доставкой,
+                    наша компания приняла на себя.
+                  </li>
+                  <li>
+                    Клиент остался доволен качеством сервиса и продолжает
+                    сотрудничество с нами по сей день.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cases-item__cover">
+            <img
+              class="cases-item__cover-image"
+              srcset="
+                /assets/images/cases-item/1.webp    1x,
+                /assets/images/cases-item/1-2x.webp 2x
+              "
+              width="501"
+              height="443"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="services services--news_item container"
+        aria-labelledby="services-title"
+      >
+        <div class="services__inner">
+          <h2 class="services__title section-title h3" id="services-title">
+            Услуги
+          </h2>
+          <div
+            class="services__slider"
+            data-js-slider='{
+                "sliderParams": {
+                  "spaceBetween": 20,
+                  "slidesPerView": 4,
+                  "slidesPerGroup": 4,
+                  "pagination": {
+                    "el": ".services__slider-pagination",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "0": {
+                      "slidesPerView": 1.19,
+                      "slidesPerGroup": 1
+                    },
+                    "475": {
+                      "slidesPerView": 2
+                    },
+                    "768": {
+                      "slidesPerView": 4
+                    }
+                  }
+                },
+                "navigationElementId": "products-navigation-id"
+              }'
+          >
+            <div class="services__swiper swiper" data-js-slider-swiper>
+              <ul class="services__slider-list swiper-wrapper">
+                <li class="services__slider-item swiper-slide">
+                  <div class="service-card">
+                    <a class="service-card__link" href="./services_alt.html"></a>
+                    <div class="service-card__inner">
+                      <h3 class="service-card__title h4" lang="ru">
+                        Морские перевозки
+                      </h3>
+                      <div class="service-card__description">
+                        <p>
+                          Основная деятельность нашей компании – международные
+                          морские контейнерные перевозки грузов. 
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="services-card__image"
+                      srcset="
+                        /assets/images/service-card/boat.webp    1x,
+                        /assets/images/service-card/boat-2x.webp 2x
+                      "
+                      width="176"
+                      height="176"
+                      alt="boat"
+                      loading="lazy"
+                    />
+                  </div>
+                </li>
+                <li class="services__slider-item swiper-slide">
+                  <div class="service-card">
+                    <a class="service-card__link" href="./services.html"></a>
+                    <div class="service-card__inner">
+                      <h3 class="service-card__title h4" lang="ru">
+                        Экспедирование в порту
+                      </h3>
+                      <div class="service-card__description">
+                        <p>
+                          Неотъемлемой частью экспортных и импортных морских
+                          перевозок является экспедирование грузов является
+                          экспедирование грузов
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="services-card__image"
+                      srcset="
+                        /assets/images/service-card/port.webp    1x,
+                        /assets/images/service-card/port-2x.webp 2x
+                      "
+                      width="176"
+                      height="176"
+                      alt="port"
+                      loading="lazy"
+                    />
+                  </div>
+                </li>
+                <li class="services__slider-item swiper-slide">
+                  <div class="service-card">
+                    <a class="service-card__link" href="./services.html"></a>
+                    <div class="service-card__inner">
+                      <h3 class="service-card__title h4" lang="ru">
+                        Автомобильные перевозки
+                      </h3>
+                      <div class="service-card__description">
+                        <p>
+                          Автоперевозка — это удобный, надежный и оперативный
+                          способ транспортировки груза. Преимущество данного
+                          транспортировки груза
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="services-card__image"
+                      srcset="
+                        /assets/images/service-card/truck.webp    1x,
+                        /assets/images/service-card/truck-2x.webp 2x
+                      "
+                      width="176"
+                      height="176"
+                      alt="truck"
+                      loading="lazy"
+                    />
+                  </div>
+                </li>
+                <li class="services__slider-item swiper-slide">
+                  <div class="service-card">
+                    <a class="service-card__link" href="./services.html"></a>
+                    <div class="service-card__inner">
+                      <h3 class="service-card__title h4" lang="ru">
+                        Железнодорожные перевозки
+                      </h3>
+                      <div class="service-card__description">
+                        <p>
+                          Мы также осуществляем перевозки грузов железнодорожным
+                          транспортом на территории транспортом на территории
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="services-card__image"
+                      srcset="
+                        /assets/images/service-card/train.webp    1x,
+                        /assets/images/service-card/train-2x.webp 2x
+                      "
+                      width="176"
+                      height="176"
+                      alt="train"
+                      loading="lazy"
+                    />
+                  </div>
+                </li>
+                <li class="services__slider-item swiper-slide">
+                  <div class="service-card">
+                    <a class="service-card__link" href="./services_alt.html"></a>
+                    <div class="service-card__inner">
+                      <h3 class="service-card__title h4" lang="ru">
+                        Морские перевозки
+                      </h3>
+                      <div class="service-card__description">
+                        <p>
+                          Основная деятельность нашей компании – международные
+                          морские контейнерные перевозки грузов. 
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="services-card__image"
+                      srcset="
+                        /assets/images/service-card/boat.webp    1x,
+                        /assets/images/service-card/boat-2x.webp 2x
+                      "
+                      width="176"
+                      height="176"
+                      alt="boat"
+                      loading="lazy"
+                    />
+                  </div>
+                </li>
+                <li class="services__slider-item swiper-slide">
+                  <div class="service-card">
+                    <a class="service-card__link" href="./services.html"></a>
+                    <div class="service-card__inner">
+                      <h3 class="service-card__title h4" lang="ru">
+                        Экспедирование в порту
+                      </h3>
+                      <div class="service-card__description">
+                        <p>
+                          Неотъемлемой частью экспортных и импортных морских
+                          перевозок является экспедирование грузов является
+                          экспедирование грузов
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="services-card__image"
+                      srcset="
+                        /assets/images/service-card/port.webp    1x,
+                        /assets/images/service-card/port-2x.webp 2x
+                      "
+                      width="176"
+                      height="176"
+                      alt="port"
+                      loading="lazy"
+                    />
+                  </div>
+                </li>
+                <li class="services__slider-item swiper-slide">
+                  <div class="service-card">
+                    <a class="service-card__link" href="./services.html"></a>
+                    <div class="service-card__inner">
+                      <h3 class="service-card__title h4" lang="ru">
+                        Автомобильные перевозки
+                      </h3>
+                      <div class="service-card__description">
+                        <p>
+                          Автоперевозка — это удобный, надежный и оперативный
+                          способ транспортировки груза. Преимущество данного
+                          транспортировки груза
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="services-card__image"
+                      srcset="
+                        /assets/images/service-card/truck.webp    1x,
+                        /assets/images/service-card/truck-2x.webp 2x
+                      "
+                      width="176"
+                      height="176"
+                      alt="truck"
+                      loading="lazy"
+                    />
+                  </div>
+                </li>
+                <li class="services__slider-item swiper-slide">
+                  <div class="service-card">
+                    <a class="service-card__link" href="./services.html"></a>
+                    <div class="service-card__inner">
+                      <h3 class="service-card__title h4" lang="ru">
+                        Железнодорожные перевозки
+                      </h3>
+                      <div class="service-card__description">
+                        <p>
+                          Мы также осуществляем перевозки грузов железнодорожным
+                          транспортом на территории транспортом на территории
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="services-card__image"
+                      srcset="
+                        /assets/images/service-card/train.webp    1x,
+                        /assets/images/service-card/train-2x.webp 2x
+                      "
+                      width="176"
+                      height="176"
+                      alt="train"
+                      loading="lazy"
+                    />
+                  </div>
+                </li>
+              </ul>
+              <div
+                class="services__slider-navigation"
+                id="slider-navigation-id"
+                data-js-slider-navigation
+              >
+                <div
+                  class="services__slider-pagination swiper-pagination"
+                  data-js-slider-pagination
+                ></div>
+                <button
+                  class="services__slider-button-next swiper-button-next"
+                  data-js-slider-next-button
+                >
+                  <svg class="icon icon--arrow-right" width="48" height="8">
+                    <use href="/assets/icons/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer__inner">
+        <div class="footer__meta">
+          <a class="footer__logo" href="/main.html">
+            <img
+              class="footer__logo-image"
+              src="/logo-footer.svg"
+              width="36"
+              height="36"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+          <div class="footer__meta-inner">
+            <div class="footer__copyright">
+              <p>&copy; 2025, SOVCONT logistic ltd</p>
+              <p>All rights reserved</p>
+            </div>
+            <ul class="footer__soc1als">
+              <li class="footer__soc1als-item">
+                <a class="footer__soc1als-link" href="#">
+                  <svg class="icon icon--whatsapp" width="30" height="30">
+                    <use href="/assets/icons/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__soc1als-item">
+                <a class="footer__soc1als-link" href="#">
+                  <svg class="icon icon--vk" width="30" height="30">
+                    <use href="/assets/icons/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__soc1als-item">
+                <a class="footer__soc1als-link" href="#">
+                  <svg class="icon icon--telegram" width="30" height="30">
+                    <use href="/assets/icons/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="footer__address-list address-list">
+          <li class="address-list__item">
+            <div class="address-list__office">
+              <h5 class="address-list__office-city">Офис Новороссийск</h5>
+              <address class="address-list__office-address">
+                <span class="address-list__office-location">
+                  353915, РФ, Краснодарский край, <br />
+                  г. Новороссийск, ул. Грибоедова,<br />
+                  д. 18, оф. #3
+                </span>
+                <div class="address-list__office-contacts">
+                  <a class="address-list__office-phone" href="tel:+78617790770">
+                    +7 (8617) 790-770
+                  </a>
+                  <a
+                    class="address-list__office-mail"
+                    href="mailto:info@sovcont.com"
+                  >
+                    info@sovcont.com
+                  </a>
+                </div>
+              </address>
+            </div>
+          </li>
+          <li class="address-list__item">
+            <div class="address-list__office">
+              <h5 class="address-list__office-city">Офис Санкт-Петербург</h5>
+              <address class="address-list__office-address">
+                <span class="address-list__office-location">
+                  690090, РФ, Санкт-Петербург,<br />
+                  БЦ ЛАХТА-1, ул. Оптиков 4 к. 2,<br />
+                  офис 118
+                </span>
+                <div class="address-list__office-contacts">
+                  <a class="address-list__office-phone" href="tel:+78129822330">
+                    +7 (812) 982-23-30
+                  </a>
+                  <a
+                    class="address-list__office-mail"
+                    href="mailto:spb@sovcont.com"
+                  >
+                    spb@sovcont.com
+                  </a>
+                </div>
+              </address>
+            </div>
+          </li>
+          <li class="address-list__item">
+            <div class="address-list__office">
+              <h5 class="address-list__office-city">Офис Владивосток</h5>
+              <address class="address-list__office-address">
+                <span class="address-list__office-location">
+                  690090, РФ, Приморский край,<br />
+                  г. Владивосток,<br />
+                  ул. Алеутская 45а, офис 825
+                </span>
+                <div class="address-list__office-contacts">
+                  <a class="address-list__office-phone" href="tel:+74232393523">
+                    +7 (423) 239-35-23
+                  </a>
+                  <a
+                    class="address-list__office-mail"
+                    href="mailto:vv@sovcont.com"
+                  >
+                    vv@sovcont.com
+                  </a>
+                </div>
+              </address>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

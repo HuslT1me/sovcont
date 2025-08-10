@@ -1,0 +1,240 @@
+@use '../helpers' as *;
+
+.showcase {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
+    margin-bottom: fluid(53, 41);
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &--last-child {
+    margin-bottom: fluid(115, 40);
+  }
+
+  &__cases {
+    @include decor-line(46, var(--color-white));
+
+    display: grid;
+    border-radius: var(--rounded-base);
+    background-color: var(--color-accent);
+    padding: rem(12) fluid(45, 20);
+
+    @include mobile {
+      padding-block: rem(17);
+    }
+
+    &-title {
+      margin-bottom: rem(15);
+      color: var(--color-white);
+
+      @include mobile {
+        margin-bottom: rem(18);
+        padding-left: rem(25);
+      }
+    }
+
+    &-inner {
+      display: flex;
+      row-gap: rem(29);
+      flex-direction: column;
+
+      @include mobile {
+        row-gap: rem(32);
+      }
+    }
+
+    &-news {
+      display: flex;
+      position: relative;
+      gap: fluid(29, 26);
+
+      &:has(.showcase__cases-link:hover) {
+        .showcase__cases-details {
+          opacity: 0.8;
+          transition-duration: var(--transition-duration);
+        }
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+
+    &-link {
+      @include abs-full;
+    }
+
+    &-image {
+      margin-top: rem(6);
+      border-radius: var(--rounded-base);
+
+      @include mobile {
+        aspect-ratio: 350 / 271;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-details {
+      display: flex;
+      row-gap: rem(25);
+      flex-direction: column;
+    }
+
+    &-news-title {
+      color: var(--color-white);
+      line-height: 1.25;
+
+      span {
+        @include line-clamp(4);
+      }
+    }
+
+    &-footer {
+      display: flex;
+      column-gap: rem(34);
+      align-items: center;
+    }
+
+    &-decor-line {
+      flex: none;
+      flex-grow: 1;
+      opacity: 0.6;
+      margin: 0;
+      margin-top: rem(4);
+      border: none;
+      background: var(--color-white);
+      height: rem(1);
+    }
+
+    &-more {
+      flex-shrink: 0;
+      color: var(--color-white);
+
+      @include hover {
+        opacity: 0.6;
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &__partners {
+    display: grid;
+
+    @include tablet {
+      margin-inline: rem(20);
+    }
+
+    &-inner {
+      @include decor-line(46);
+
+      display: grid;
+      border-top: var(--border);
+      border-right: var(--border);
+      border-left: var(--border);
+      border-radius: var(--rounded-base);
+
+      @include mobile {
+        border: none;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: rem(18);
+      padding: rem(12) rem(32) 0 rem(45);
+
+      @include mobile {
+        margin-bottom: rem(29);
+        padding-top: rem(21);
+        padding-inline: 0;
+      }
+    }
+
+    &-body {
+      height: 100%;
+    }
+
+    &-swiper {
+      height: 100%;
+    }
+
+    &-slider-controls {
+      display: flex;
+      column-gap: rem(12);
+      align-items: center;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &-slide-inner {
+      display: flex;
+      row-gap: fluid(35, 29);
+      flex-direction: column;
+      height: 100%;
+    }
+
+    &-main-info {
+      display: flex;
+      row-gap: rem(31);
+      flex-direction: column;
+
+      @include mobile-above {
+        padding: rem(12) rem(45) 0;
+      }
+    }
+
+    &-link {
+      width: max-content;
+
+      @include hover {
+        opacity: 0.8;
+      }
+    }
+
+    &-description {
+      font-size: rem(16);
+      line-height: 1.62;
+
+      p {
+        @include line-clamp;
+
+        @include mobile {
+          @include line-clamp(6);
+        }
+      }
+    }
+
+    &-cover {
+      margin-top: auto;
+
+      &-image {
+        border-radius: 0 0 var(--rounded-base) var(--rounded-base);
+        width: 100%;
+
+        @include mobile {
+          border-radius: var(--rounded-base);
+          aspect-ratio: 350 / 224;
+        }
+      }
+    }
+  }
+
+  &__slider-item-controls {
+    display: flex;
+    column-gap: rem(13);
+  }
+}

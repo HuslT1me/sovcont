@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.swiper {
+  &-pagination {
+    display: flex;
+    column-gap: rem(12);
+    align-items: center;
+
+    &-bullet {
+      opacity: 0.3;
+      border-radius: 50%;
+      background-color: var(--color-accent);
+
+      @include square(rem(11));
+
+      &-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-button-next {
+    height: rem(44);
+
+    @include flex-center;
+    @include reset-button;
+  }
+}

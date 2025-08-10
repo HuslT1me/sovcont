@@ -1,0 +1,42 @@
+@use 'helpers' as *;
+
+:root {
+  --color-accent: #00aab5;
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-gray-30: #f0f0f0;
+  --color-gray-50: #c8c8c8;
+  --color-gray-55: #b0b0b0;
+  --color-gray-60: #666666;
+
+  --color-whatsapp: #25d366;
+  --color-vk: #0077ff;
+  --color-telegram: #24a1de;
+
+  --article-bg: color-mix(in srgb, var(--color-gray-30) 80%, transparent);
+
+  --font-family-base: 'Proxima Nova', sans-serif;
+
+  --font-size-base: #{rem(18)};
+
+  --tracking-small: #{rem(0.2)};
+  --tracking-medium: #{rem(0.3)};
+  --tracking-long: #{rem(0.4)};
+  --tracking-main-title: #{rem(0.5)};
+
+  --rounded-sm: #{rem(5)};
+  --rounded-base: #{rem(10)};
+
+  --padding-title: #{rem(32)};
+
+  --transition-duration: 0.2s;
+  --transition-duration-long: 0.4s;
+
+  --container-width: #{rem(1230)};
+  --container-padding-x: #{rem(20)};
+
+  --border: #{rem(1)} solid var(--color-accent);
+
+  --backdrop: blur(#{rem(15)});
+}
