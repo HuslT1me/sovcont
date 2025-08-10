@@ -12,7 +12,15 @@
 
   &__main {
     display: flex;
+    position: relative;
     gap: fluid(46, 20);
+
+    &:has(.cases__article-link:hover) {
+      .cases__main-title {
+        transition-duration: var(--transition-duration);
+        color: var(--color-accent);
+      }
+    }
 
     @include tablet {
       flex-direction: column;
@@ -83,8 +91,16 @@
 
   &__article {
     display: flex;
+    position: relative;
     border-radius: var(--rounded-base);
     background-color: var(--article-bg);
+
+    &:has(.cases__article-link:hover) {
+      .cases__article-title {
+        transition-duration: var(--transition-duration);
+        color: var(--color-accent);
+      }
+    }
 
     @include mobile {
       flex-direction: column;
@@ -115,6 +131,11 @@
       span {
         @include line-clamp(5);
       }
+    }
+
+    &-link {
+      @include abs-full;
+      z-index: 99;
     }
   }
 
