@@ -1,0 +1,1287 @@
+<!doctype html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sovcont | Админ. главная</title>
+    <script type="module" crossorigin src="./assets/main-Jq7GL_tz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BFkQkzC4.css">
+  </head>
+  <body>
+    <header class="header header--dashboard container container--alt">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a class="header__logo-link" href="prev-index.html">
+            <img
+              class="header__logo-image"
+              src="./logo.svg"
+              width="176"
+              height="44"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <div class="header__main">
+          <div class="header__person-info" data-js-overlay-menu>
+            <button
+              class="header__person-info-open"
+              type="button"
+              data-js-overlay-menu-burger-button
+            >
+              <svg class="icon icon--card" width="26" height="20">
+                <use href="./assets/icons/sprite.svg#card"></use>
+              </svg>
+            </button>
+            <dialog
+              class="header__person-info-popup"
+              data-js-overlay-menu-dialog
+            >
+              <div class="header__person-name">
+                <svg class="icon icon--card" width="26" height="20">
+                  <use href="./assets/icons/sprite.svg#card"></use>
+                </svg>
+                <p>Анатолий Грошенков</p>
+              </div>
+              <p class="header__person-number">+7 916 773-12-12</p>
+              <a class="header__person-email" href="mailto:ag@sovcont.com">
+                ag@sovcont.com
+              </a>
+            </dialog>
+          </div>
+          <div class="header__notifications">
+            <button class="header__notifications-button" type="button">
+              <svg class="icon icon--bell" width="18" height="20">
+                <use href="./assets/icons/sprite.svg#bell"></use>
+              </svg>
+              <span class="header__notifications-button-counter"> 12 </span>
+            </button>
+          </div>
+          <div class="header__additional">
+            <p>Office-Impex</p>
+            <a class="header__exit" href="#">
+              <svg class="icon icon--exit" width="25" height="20">
+                <use href="./assets/icons/sprite.svg#exit"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      class="main main--dashboard container container--alt container--contents"
+    >
+      <aside class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__list-item">
+            <a class="sidebar__list-link" href="#">
+              <svg class="icon icon--graphic" width="22" height="22">
+                <use href="./assets/icons/sprite.svg#graphic"></use>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a class="sidebar__list-link" href="#">
+              <svg class="icon icon--globe" width="18" height="22">
+                <use href="./assets/icons/sprite.svg#globe"></use>
+              </svg>
+              Orders
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a class="sidebar__list-link" href="#">
+              <svg class="icon icon--briefcase" width="22" height="22">
+                <use href="./assets/icons/sprite.svg#briefcase"></use>
+              </svg>
+              Documents
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a class="sidebar__list-link is-active" href="#">
+              <svg class="icon icon--bell" width="20" height="22">
+                <use href="./assets/icons/sprite.svg#bell"></use>
+              </svg>
+              Notifications
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="orders">
+        <div class="orders__header">
+          <div class="orders__select select">
+            <select class="select__field js-choices" data-js-choices>
+              <option value="Sea to Novorossiysk">Sea to Novorossiysk</option>
+              <option value="Sea to SPB">Sea to SPB</option>
+              <option value="Direct Rail">Direct Rail</option>
+              <option value="Sea to Far East">Sea to Far East</option>
+              <option value="Air">Air</option>
+              <option value="Truck">Truck</option>
+              <option value="Export">Export</option>
+            </select>
+          </div>
+          <ul class="orders__routes routes-list">
+            <li class="routes-list__item is-active">
+              <a class="routes-list__link" href="#"> Sea to Novorossiysk </a>
+            </li>
+            <li class="routes-list__item">
+              <a class="routes-list__link" href="#">Sea to SPB</a>
+            </li>
+            <li class="routes-list__item">
+              <a class="routes-list__link" href="#">Direct Rail</a>
+            </li>
+            <li class="routes-list__item">
+              <a class="routes-list__link" href="#"> Sea to Far East </a>
+            </li>
+            <li class="routes-list__item">
+              <a class="routes-list__link" href="#">Air</a>
+            </li>
+            <li class="routes-list__item">
+              <a class="routes-list__link" href="#">Truck</a>
+            </li>
+            <li class="routes-list__item">
+              <a class="routes-list__link" href="#">Export</a>
+            </li>
+          </ul>
+          <button
+            class="orders__filters-button"
+            type="button"
+            data-js-details-open
+          >
+            <p class="orders__filters-button-inner">
+              <svg class="icon icon--arrow-top" width="24" height="24">
+                <use href="./assets/icons/sprite.svg#arrow-prev"></use>
+              </svg>
+              Filters
+            </p>
+            <svg class="icon icon--settings" width="20" height="20">
+              <use href="./assets/icons/sprite.svg#settings"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="orders__filters filters">
+          <details class="filters__details visually-hidden" data-js-details>
+            <summary class="filters__summary">о компании</summary>
+          </details>
+          <form class="filters__form" data-js-filters-form>
+            <div class="filters__form-wrapper">
+              <div class="filters__form-content">
+                <div class="filters__form-body">
+                  <div class="filters__form-inner">
+                    <div class="filters__input input">
+                      <label class="input__label" for="input-booking">
+                        Booking number
+                      </label>
+                      <input
+                        class="input__field"
+                        type="text"
+                        id="input-booking"
+                        placeholder="Booking number"
+                      />
+                    </div>
+                    <div class="filters__input input">
+                      <label class="input__label" for="input-clients-booking">
+                        Client’s booking number
+                      </label>
+                      <input
+                        class="input__field"
+                        type="text"
+                        id="input-clients-booking"
+                        placeholder="Client’s booking number"
+                      />
+                    </div>
+                    <div class="filters__select select">
+                      <label for="select-status" class="select__label"
+                        >Status</label
+                      >
+                      <select
+                        class="select__field js-choices"
+                        id="select-status"
+                        data-js-choices
+                      >
+                        <option value="" selected disabled hidden></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="filters__select select">
+                      <label class="select__label" for="select-pol">POL</label>
+                      <select
+                        class="select__field js-choices"
+                        id="select-pol"
+                        data-js-choices
+                      >
+                        <option value="" selected disabled hidden></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="filters__range">
+                      <p class="input__label">ETD</p>
+                      <div class="filters__range-inner">
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            placeholder="to"
+                          />
+                        </div>
+                        <p>—</p>
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            placeholder="to"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filters__select select">
+                      <label class="select__label" for="select-vessel">
+                        Feeder vessel
+                      </label>
+                      <select
+                        class="select__field js-choices"
+                        id="select-vessel"
+                        data-js-choices
+                      >
+                        <option value="" selected disabled hidden></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="filters__select select">
+                      <label class="select__label" for="select-pod">
+                        POD
+                      </label>
+                      <select
+                        class="select__field js-choices"
+                        id="select-pod"
+                        data-js-choices
+                      >
+                        <option value="" selected disabled hidden></option>
+                        <option value="" selected disabled hidden></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="filters__range">
+                      <p class="input__label">ETA</p>
+                      <div class="filters__range-inner">
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            id="input-from-eta"
+                            placeholder="from"
+                          />
+                        </div>
+                        <p>—</p>
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            placeholder="to"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filters__select select">
+                      <label class="select__label" for="select-carrier">
+                        Carrier
+                      </label>
+                      <select
+                        class="select__field js-choices"
+                        id="select-carrier"
+                        data-js-choices
+                      >
+                        <option value="" selected disabled hidden></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="filters__input input">
+                      <label class="input__label" for="input-bl">
+                        BL/waybill/CMR
+                      </label>
+                      <input
+                        class="input__field"
+                        type="text"
+                        id="input-bl"
+                        placeholder="BL/waybill/CMR"
+                      />
+                    </div>
+                    <div class="filters__input input">
+                      <label class="input__label" for="input-number">
+                        Container/truck number
+                      </label>
+                      <input
+                        class="input__field"
+                        type="text"
+                        id="input-number"
+                        placeholder="Container/truck number"
+                      />
+                    </div>
+                    <div class="filters__select select">
+                      <label class="select__label" for="select-release">
+                        Telex release
+                      </label>
+                      <select
+                        class="select__field js-choices"
+                        id="select-release"
+                        data-js-choices
+                      >
+                        <option value="" selected disabled hidden></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="filters__range">
+                      <p class="input__label">Date of discharge</p>
+                      <div class="filters__range-inner">
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            id="input-from-discharge"
+                            placeholder="from"
+                          />
+                        </div>
+                        <p>—</p>
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            placeholder="to"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filters__range">
+                      <p class="input__label">Pick up date</p>
+                      <div class="filters__range-inner">
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            id="input-from-pick-up"
+                            placeholder="from"
+                          />
+                        </div>
+                        <p>—</p>
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            placeholder="to"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filters__range">
+                      <p class="input__label">Delivery</p>
+                      <div class="filters__range-inner">
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            id="input-delivery"
+                            placeholder="from"
+                          />
+                        </div>
+                        <p>—</p>
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            placeholder="to"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filters__input input">
+                      <label class="input__label" for="input-driver">
+                        Driver
+                      </label>
+                      <input
+                        class="input__field"
+                        type="text"
+                        id="input-driver"
+                        placeholder="Gross weight"
+                      />
+                    </div>
+                    <div class="filters__input input">
+                      <label class="input__label" for="input-transport">
+                        Transport data
+                      </label>
+                      <input
+                        class="input__field"
+                        type="text"
+                        id="input-transport"
+                        placeholder="Gross weight"
+                      />
+                    </div>
+                    <div class="filters__range">
+                      <p class="input__label">Empty container return date</p>
+                      <div class="filters__range-inner">
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            id="input-empty-container"
+                            placeholder="from"
+                          />
+                        </div>
+                        <p>—</p>
+                        <div class="filters__input input">
+                          <input
+                            class="input__field"
+                            type="text"
+                            placeholder="to"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filters__form-footer">
+                  <div class="filters__form-actions form-actions">
+                    <button class="form-actions__find" type="submit">
+                      <svg class="icon icon--search" width="20" height="20">
+                        <use href="./assets/icons/sprite.svg#search"></use>
+                      </svg>
+                      Find
+                    </button>
+                    <button
+                      class="form-actions__clear"
+                      type="reset"
+                      data-js-filters-clear
+                    >
+                      <svg class="icon icon--trash" width="18" height="20">
+                        <use href="./assets/icons/sprite.svg#trash"></use>
+                      </svg>
+                      Clear
+                    </button>
+                  </div>
+                  <button
+                    class="filters__collapse"
+                    type="button"
+                    data-js-details-close
+                  >
+                    <svg class="icon icon--arrow-top-alt" width="12" height="8">
+                      <use href="./assets/icons/sprite.svg#arrow-prev-sm"></use>
+                    </svg>
+                    Collapse
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="orders__table">
+          <div class="orders__table-header table-grid">
+            <button class="orders__table-header-label" type="button">
+              Booking number
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Client’s booking number
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Status
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              POL
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              ETD
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Feeder vessel
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              POD
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              ETA
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Carrier
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              BL/waybill/CMR
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Container/truck number
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Container type
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Gross weight
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Free demurrage
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Telex release
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Date of discharge
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Pick up date
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Delivery date
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Driver
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Transport data
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+            <button class="orders__table-header-label" type="button">
+              Empty container return date
+              <svg class="icon icon--arrow-vectors" width="19" height="16">
+                <use href="./assets/icons/sprite.svg#arrow-vectors"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="orders__table-line table-grid">
+            <div class="orders__table-line-item">
+              <p>SOV12499</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>ENQE25260313</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>departed from port of loading</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Xingang</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--etd">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>HT JOURNEY N2508W</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>NLE</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--eta">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Fesco</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>XHLTC019302</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>CICU6215065</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>40HC</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>25200</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>14</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>telex</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>xxx</p>
+            </div>
+            <div
+              class="orders__table-line-item orders__table-line-item--transport-data"
+            >
+              <a href="tel:+79048614861">+79048614861</a>
+              <p>Карманов Дмитрий Анатольевич</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+          </div>
+          <div class="orders__table-line table-grid">
+            <div class="orders__table-line-item">
+              <p>SOV12499</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>ENQE25260313</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>departed from port of loading</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Xingang</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--etd">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>HT JOURNEY N2508W</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>NLE</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--eta">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Fesco</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>XHLTC019302</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>CICU6215065</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>40HC</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>25200</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>14</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>telex</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>xxx</p>
+            </div>
+            <div
+              class="orders__table-line-item orders__table-line-item--transport-data"
+            >
+              <a href="tel:+79048614861">+79048614861</a>
+              <p>Карманов Дмитрий Анатольевич</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+          </div>
+          <div class="orders__table-line table-grid">
+            <div class="orders__table-line-item">
+              <p>SOV12499</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>ENQE25260313</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>departed from port of loading</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Xingang</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--etd">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>HT JOURNEY N2508W</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>NLE</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--eta">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Fesco</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>XHLTC019302</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>CICU6215065</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>40HC</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>25200</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>14</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>telex</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>xxx</p>
+            </div>
+            <div
+              class="orders__table-line-item orders__table-line-item--transport-data"
+            >
+              <a href="tel:+79048614861">+79048614861</a>
+              <p>Карманов Дмитрий Анатольевич</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+          </div>
+          <div class="orders__table-line table-grid">
+            <div class="orders__table-line-item">
+              <p>SOV12499</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>ENQE25260313</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>departed from port of loading</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Xingang</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--etd">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>HT JOURNEY N2508W</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>NLE</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--eta">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Fesco</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>XHLTC019302</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>CICU6215065</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>40HC</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>25200</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>14</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>telex</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>xxx</p>
+            </div>
+            <div
+              class="orders__table-line-item orders__table-line-item--transport-data"
+            >
+              <a href="tel:+79048614861">+79048614861</a>
+              <p>Карманов Дмитрий Анатольевич</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+          </div>
+          <div class="orders__table-line table-grid">
+            <div class="orders__table-line-item">
+              <p>SOV12499</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>ENQE25260313</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>departed from port of loading</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Xingang</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--etd">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>HT JOURNEY N2508W</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>NLE</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--eta">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Fesco</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>XHLTC019302</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>CICU6215065</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>40HC</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>25200</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>14</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>telex</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>xxx</p>
+            </div>
+            <div
+              class="orders__table-line-item orders__table-line-item--transport-data"
+            >
+              <a href="tel:+79048614861">+79048614861</a>
+              <p>Карманов Дмитрий Анатольевич</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+          </div>
+          <div class="orders__table-line table-grid">
+            <div class="orders__table-line-item">
+              <p>SOV12499</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>ENQE25260313</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>departed from port of loading</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Xingang</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--etd">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>HT JOURNEY N2508W</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>NLE</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--eta">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Fesco</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>XHLTC019302</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>CICU6215065</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>40HC</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>25200</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>14</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>telex</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>xxx</p>
+            </div>
+            <div
+              class="orders__table-line-item orders__table-line-item--transport-data"
+            >
+              <a href="tel:+79048614861">+79048614861</a>
+              <p>Карманов Дмитрий Анатольевич</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+          </div>
+          <div class="orders__table-line table-grid">
+            <div class="orders__table-line-item">
+              <p>SOV12499</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>ENQE25260313</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>departed from port of loading</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Xingang</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--etd">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>HT JOURNEY N2508W</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>NLE</p>
+            </div>
+            <div class="orders__table-line-item orders__table-line-item--eta">
+              <time datetime="2025-11-26">26.11.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>Fesco</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>XHLTC019302</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>CICU6215065</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>40HC</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>25200</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>14</p>
+            </div>
+            <div class="orders__table-line-item">
+              <p>telex</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+            <div class="orders__table-line-item">
+              <p>xxx</p>
+            </div>
+            <div
+              class="orders__table-line-item orders__table-line-item--transport-data"
+            >
+              <a href="tel:+79048614861">+79048614861</a>
+              <p>Карманов Дмитрий Анатольевич</p>
+            </div>
+            <div class="orders__table-line-item">
+              <time datetime="2025-10-12">12.10.2025</time>
+            </div>
+          </div>
+        </div>
+        <div class="orders__pagination pagination">
+          <p>Showing <span>1-09</span> of <span>78</span></p>
+          <div class="pagination__buttons">
+            <button
+              class="pagination__page-change pagination__page-change--prev"
+              type="button"
+              disabled
+            >
+              <svg class="icon icon--arrow-prev" width="24" height="23">
+                <use href="./assets/icons/sprite.svg#arrow-prev"></use>
+              </svg>
+            </button>
+            <button
+              class="pagination__page-change pagination__page-change--next"
+              type="button"
+            >
+              <svg class="icon icon--arrow-next" width="24" height="23">
+                <use href="./assets/icons/sprite.svg#arrow-prev"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer container container--alt">
+      <div class="footer__inner">
+        <div class="footer__meta">
+          <a class="footer__logo" href="/main.html">
+            <img
+              class="footer__logo-image"
+              src="./logo-footer.svg"
+              width="36"
+              height="36"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+          <div class="footer__meta-inner">
+            <div class="footer__copyright">
+              <p>&copy; 2025, SOVCONT logistic ltd</p>
+              <p>All rights reserved</p>
+            </div>
+            <ul class="footer__soc1als">
+              <li class="footer__soc1als-item">
+                <a class="footer__soc1als-link" href="#">
+                  <svg class="icon icon--whatsapp" width="30" height="30">
+                    <use href="./assets/icons/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__soc1als-item">
+                <a class="footer__soc1als-link" href="#">
+                  <svg class="icon icon--vk" width="30" height="30">
+                    <use href="./assets/icons/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__soc1als-item">
+                <a class="footer__soc1als-link" href="#">
+                  <svg class="icon icon--telegram" width="30" height="30">
+                    <use href="./assets/icons/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="footer__address-list address-list">
+          <li class="address-list__item">
+            <div class="address-list__office">
+              <h5 class="address-list__office-city">Офис Новороссийск</h5>
+              <address class="address-list__office-address">
+                <span class="address-list__office-location">
+                  353915, РФ, Краснодарский край, <br />
+                  г. Новороссийск, ул.<br />
+                  Грибоедова, д. 18, оф. #3
+                </span>
+                <div class="address-list__office-contacts">
+                  <a class="address-list__office-phone" href="tel:+78617790770">
+                    +7 (8617) 790-770
+                  </a>
+                  <a
+                    class="address-list__office-mail"
+                    href="mailto:info@sovcont.com"
+                  >
+                    info@sovcont.com
+                  </a>
+                </div>
+              </address>
+            </div>
+          </li>
+          <li class="address-list__item">
+            <div class="address-list__office">
+              <h5 class="address-list__office-city">Офис Санкт-Петербург</h5>
+              <address class="address-list__office-address">
+                <span class="address-list__office-location">
+                  690090, РФ, Санкт-Петербург, БЦ ЛАХТА-1,<br />
+                  ул. Оптиков 4 к. 2, офис 118
+                </span>
+                <div class="address-list__office-contacts">
+                  <a class="address-list__office-phone" href="tel:+78129822330">
+                    +7 (812) 982-23-30
+                  </a>
+                  <a
+                    class="address-list__office-mail"
+                    href="mailto:spb@sovcont.com"
+                  >
+                    spb@sovcont.com
+                  </a>
+                </div>
+              </address>
+            </div>
+          </li>
+          <li class="address-list__item">
+            <div class="address-list__office">
+              <h5 class="address-list__office-city">Офис Владивосток</h5>
+              <address class="address-list__office-address">
+                <span class="address-list__office-location">
+                  690090, РФ, Приморский край, г. Владивосток,<br />
+                  ул. Алеутская 45а, офис 825
+                </span>
+                <div class="address-list__office-contacts">
+                  <a class="address-list__office-phone" href="tel:+74232393523">
+                    +7 (423) 239-35-23
+                  </a>
+                  <a
+                    class="address-list__office-mail"
+                    href="mailto:vv@sovcont.com"
+                  >
+                    vv@sovcont.com
+                  </a>
+                </div>
+              </address>
+            </div>
+          </li>
+          <li class="address-list__item">
+            <div class="address-list__office">
+              <h5 class="address-list__office-city">Офис Шанхай</h5>
+              <address class="address-list__office-address">
+                <span class="address-list__office-location">
+                  Shanghai, Yangpu District, Sanmen road 200 (Kaidi Space Plaza)
+                  building 1, office 602-2 (6th floor)
+                </span>
+                <div class="address-list__office-contacts">
+                  <a class="address-list__office-phone" href="tel:+74232393523">
+                    +7 (423) 239-35-23
+                  </a>
+                  <a
+                    class="address-list__office-mail"
+                    href="mailto:vv@sovcont.com"
+                  >
+                    vv@sovcont.com
+                  </a>
+                </div>
+              </address>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div
+      class="chapters-mobile"
+      data-scroll-visibility
+      data-scroll-delay="3000"
+    >
+      <ul class="chapters-mobile__list">
+        <li class="chapters-mobile__list-item">
+          <a class="chapters-mobile__list-link is-active" href="#">
+            <svg class="icon icon--graphic" width="22" height="22">
+              <use href="./assets/icons/sprite.svg#graphic"></use>
+            </svg>
+            Dashboard
+          </a>
+        </li>
+        <li class="chapters-mobile__list-item">
+          <a class="chapters-mobile__list-link" href="#">
+            <svg class="icon icon--globe" width="18" height="22">
+              <use href="./assets/icons/sprite.svg#globe"></use>
+            </svg>
+            Orders
+          </a>
+        </li>
+        <li class="chapters-mobile__list-item">
+          <a class="chapters-mobile__list-link" href="#">
+            <svg class="icon icon--bell" width="20" height="22">
+              <use href="./assets/icons/sprite.svg#bell"></use>
+            </svg>
+            Notifications
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
